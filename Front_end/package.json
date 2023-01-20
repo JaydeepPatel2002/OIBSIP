@@ -1,0 +1,84 @@
+{
+  "name": "lo6clientui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "json": "json-server --watch db.json --port 3006"
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.21.2",
+    "bootswatch": "^4.6.1",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "json-server": "^0.17.1",
+    "sqlite": "^4.1.2",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/http-errors": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "class-validator": "^0.13.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "typescript": "~4.1.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard",
+      "@vue/typescript/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "vue/no-multi-spaces": "error",
+      "vue/attribute-hyphenation": "error",
+      "vue/this-in-template": "error",
+      "vue/key-spacing": "error",
+      "vue/keyword-spacing": "error",
+      "vue/html-closing-bracket-spacing": "error",
+      "vue/html-indent": "error",
+      "vue/html-quotes": "error",
+      "vue/no-spaces-around-equal-signs-in-attribute": "error",
+      "vue/object-curly-spacing": "error",
+      "vue/script-indent": "error",
+      "vue/component-name-in-template-casing": "error",
+      "vue/comma-dangle": [
+        "error",
+        "only-multiline"
+      ],
+      "vue/component-definition-name-casing": "error"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue/dist/bootstrap-vue.min.css">
+  <title>Temporary Student UI</title>
+</head>
+<body>
+
+
+<!-- This div is rendered by Vuejs - Allows for Vuejs directives and componets -->
+<div class="container-fluid" id="app">
+  <b-jumbotron header="Temporary Student UI" lead="Quick and Dirty">
+    <b-input-group size="lg">
+      <b-form-input type="search" placeholder="Search" debounce="500" v-model="searchString" @update="getStudents"></b-form-input>
+      <b-input-group-append>
+        <b-button variant="info" class="fas fa-search fa-xl" @click="getStudents" ></b-button>
+      </b-input-group-append>
+    </b-input-group>
+
+  </b-jumbotron>
+
+
+  <div v-if="isLoading" class="text-center">
+      <b-spinner variant="primary" label="Spinning" style="width: 10rem; height:10rem;" />
+    </div>
+
+
+
+
+
+  <table v-else  class="table table-hover table-striped">
+    <tr>
+      <th>ID</th>
+      <th>Given Name</th>
+      <th>Family Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>Password</th>
+      <th>Action</th>
+    </tr>
+    <!--        CREATE INPUT-->
+    <tr>
+      <td></td>
+      <td>
+        <b-form-group :invalid-feedback="violation.givenName">
+          <b-form-input :state="violation.givenName?false:null" v-model="studentToCreate.givenName"/>
+        </b-form-group>
+      </td>
+      <td>
+        <b-form-group  :invalid-feedback="violation.familyName">
+          <b-form-input :state="violation.familyName?false:null"  v-model="studentToCreate.familyName" />
+        </b-form-group>
+      </td>
+      <td>
+        <b-form-group :invalid-feedback="violation.email" >
+          <b-form-input :state="violation.email?false:null"  v-model="studentToCreate.email" />
+        </b-form-group>
+      </td>
+      <td>
+        <b-form-group  :invalid-feedback="violation.phone">
+          <b-form-input :state="violation.phone?false:null"  v-model="studentToCreate.phone" />
+        </b-form-group>
+      </td>
+      <td>
+        <b-form-group :invalid-feedback="violation.address" >
+          <b-form-input :state="violation.address?false:null" v-model="studentToCreate.address" />
+        </b-form-group>
+      </td>
+      <td>
+        <b-form-group :invalid-feedback="violation.password" >
+          <b-form-input :state="violation.password?false:null" v-model="studentToCreate.password" />
+        </b-form-group>
+      </td>
+      <td><button class="btn btn-primary far fa-save fa-2x" title="Create" @click="postStudent"/></td> <!--ACTIONS COLUMN-->
+    </tr>
+
+    <tr v-for="stu in students" :key="stu.id">
+      <td v-for="field in stu" >{{field}}</td>
+
+      <td></td> <!--EMPTY PASSWORD-->
+      <td><button class="btn btn-danger far fa-trash-alt fa-2x" title="Delete" @click="deleteStudent(stu.id)"/></td>
+
+
+    </tr>
+  </table>
+
+
+  <!— OPTIONAL: used to DEBUG the data properties/variables by rendering them on the page-->
+  <b-alert variant="secondary" dismissible show>
+        <pre>
+DATA:
+{{$data}}
+        </pre>
+  </b-alert>
+
+</div>
+
+<!— IMPORT: JS Libraries from the internet-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/portal-vue/dist/portal-vue.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-vue/dist/bootstrap-vue.js"></script>
+<script>
+
+
+  var vm = new Vue({
+    el: '#app', // css selector to find the div with id="app"
+    data:{ // essentially the app state - all the data currently used by the app for rendering
+      searchString:'', // bound to the search input and sent along with the readStudents method
+      violation:{}, // contains the student props that have error messages
+      studentToCreate:{}, //js object that stores the student data we are going to POST to the api
+      isLoading: false, // boolean to track if we are waiting for api request to return from server
+      students:[ // contains all the student objects used to display in a table
+        {id:1, givenName:'Bob', familyName:'Smith', email:'bob@smith.ca'},
+        {id:2, givenName:'Sally', familyName:'Jones', email:'sally@jones.ca'},
+        {id:3, givenName:'Ernesto', familyName:'Basoalto', email:'basoaltoe@saskpolytech.ca'},
+      ],
+    },
+    methods:{
+      apiRequest: async(method='GET', paramPath='/',data={})=>{
+        const url = 'http://localhost:3004/students' + paramPath;
+        const fetchOptions = {
+          credentials: 'include', // allows api to set cookies in the browser
+          referrerPolicy: 'strict-origin-when-cross-origin',
+          headers: { // headers required by lo4serverapi project otherwise 406 error
+            'Accept': 'application/json',
+            'X-Requested-With':'XmlHttpRequest',
+            'Content-Type':'application/json; charset=utf-8'
+          }
+        };
+        // ensure valid/allowed request methods
+        method = method.toUpperCase();
+        fetchOptions.method = ['GET','POST','PUT','DELETE'].includes(method) ? method: 'GET';
+
+        // convert JS object to JSON string – GET request cannot have a body property
+        if(fetchOptions.method != 'GET')fetchOptions.body = JSON.stringify(data);
+
+        const res = await fetch(url,fetchOptions); // this the browser's version of Postman
+        //console.log("88888888888888888888888888888888888888888");//OPTIONAL: help debug if we have issues
+        //console.log(res.json());//OPTIONAL: help debug if we have issues
+        //console.log("88888888888888888888888888888888888888888888888");//OPTIONAL: help debug if we have issues
+        //location.reload();
+        // if status code of the response in not in the 200s
+        if(!res.ok){
+          const error = new Error(res.statusText + ':' + res.status);
+          error.status = res.status;
+          error.statusText = res.statusText;
+          error.data = await res.json();
+          throw error;
+        }
+        let my = await res.json();
+        console.log("88888888888888888888888888888888888888888");//OPTIONAL: help debug if we have issues
+        console.log(my);//OPTIONAL: help debug if we have issues
+        console.log("88888888888888888888888888888888888888888888888");//OPTIONAL: help debug if we have issues
+        return my; // convert response body/data INTO JSON
+      },
+      getStudents() { // uses apiRequest function to get an array of students from lo4serverapi project
+        this.isLoading = true;
+        const paramPath = this.searchString.length? '/?search='+ this.searchString : '/';
+        this.apiRequest('GET',paramPath)
+                .then(data => {
+                  this.students = data; // the data should be a JSON array of student Objects
+                })
+                .finally( ()=>{ this.isLoading = false;  }  );
+      },
+
+      postStudent() {
+        this.violation = {}; //clear errors from previous attempt
+        this.apiRequest('POST','/',this.studentToCreate)
+                .then(data=>{
+                  // add the student to the students array so that the new student will appear in the table
+                  this.students.push(data);
+                })
+                .catch(err=>{
+                  if(err.status == 422) { // constraint violation object should have been returned by the server
+                    // read the violations from the server and act accordingly
+                    const temp = {};
+                    err.data.forEach(vio=>{
+                      Object.assign(temp, {[vio.property] : vio.constraints[Object.keys(vio.constraints)[0]]});
+                    })
+                    this.violation = temp;
+                  }
+                });
+      },
+
+      //==========================================================================================================
+      //===========================this is exercise 14 where i am deleting entity based on it through UI==========
+      //==========================================================================================================
+
+       deleteStudent(id){
+        //EXERCISE: Make a delete request using apiRequest
+        // THEN Reload the list students to get the latest changes
+        alert(id); // remove this code on done coding the rest of delete
+         this.isLoading = true;
+        this.apiRequest('DELETE','/'+id).then( this.isLoading = false ).finally();
+
+
+        //window.location.reload();
+
+        //here i am refreshing the page after just 1.5 second
+        setTimeout(refresh, 1500 );
+
+        function refresh()
+        {
+          window.location.reload();
+        }
+      }
+    },
+
+    computed:{ // this section acts like dynamic data properties/variables
+
+    },
+    mounted(){ // the hook for the part of the lifecycle when the app is started and mounts the app element
+      this.getStudents();
+    }
+
+  });
+</script>
+</body>
+</html>

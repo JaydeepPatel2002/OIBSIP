@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f2602bb2-5869-4fcb-b565-9459ed27805f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_end/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Back_end/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/ts-loader/0e0d717a7b0c5eb649ba1a216e5bcb1a.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/ts-loader/0e0d717a7b0c5eb649ba1a216e5bcb1a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/ts-loader/669fa3e62b9bced107ec8399444cb75b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/ts-loader/669fa3e62b9bced107ec8399444cb75b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/ts-loader/baf4e3a4c3c00e4bd8513fb343287112.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/ts-loader/baf4e3a4c3c00e4bd8513fb343287112.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/0d4277fcd04e055e255bd29eee6995f8.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/0d4277fcd04e055e255bd29eee6995f8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/2a7a43b580eb002ad245188a93bf7d03.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/2a7a43b580eb002ad245188a93bf7d03.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/3f5cd5f679ffd54f30b3f55b124513eb.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/3f5cd5f679ffd54f30b3f55b124513eb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/4d822c9a3995ed9934f1c7a77d44aa14.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/4d822c9a3995ed9934f1c7a77d44aa14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/52a0efdbf0e89f9236218f2b1e30183d.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/52a0efdbf0e89f9236218f2b1e30183d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/69742630aa5e9a80cfe91ed43a49d0ae.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/69742630aa5e9a80cfe91ed43a49d0ae.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/6fc62e357192c304ccd8b7d8e9f00515.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/6fc62e357192c304ccd8b7d8e9f00515.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/77f22cff702df63cf710a7e5fd997492.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/77f22cff702df63cf710a7e5fd997492.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/78d1bec65a59b03f13aa8cf1d461f9dd.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/78d1bec65a59b03f13aa8cf1d461f9dd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/a15701ddabdc69df66020de0ddca73bd.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/a15701ddabdc69df66020de0ddca73bd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/b0a9df476819ed6d2ea22476511cd7d8.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/b0a9df476819ed6d2ea22476511cd7d8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/c1e7897ff23e5a45450176b60646c20d.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/c1e7897ff23e5a45450176b60646c20d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/f1de6a54a22b34561a2e4f00596fe89b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Front_end/node_modules/.cache/vue-loader/f1de6a54a22b34561a2e4f00596fe89b.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I8xwXr8qxHNIhi4tQqJ76k84BW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\jayde\OneDrive\Desktop\final\finalProject_Jaydeep_000481640\finalProject_Jaydeep_000481640\Front_end\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jayde\OneDrive\Desktop\final\finalProject_Jaydeep_000481640\finalProject_Jaydeep_000481640\Front_end\src\assets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2602bb2-5869-4fcb-b565-9459ed27805f" name="Changes" comment="" />
+      <created>1669577251208</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669577251208</updated>
+      <workItem from="1669577253103" duration="52000" />
+      <workItem from="1669578190826" duration="226000" />
+      <workItem from="1669583041630" duration="245000" />
+      <workItem from="1669583314287" duration="756000" />
+      <workItem from="1669995668226" duration="621000" />
+      <workItem from="1670370988567" duration="3481000" />
+      <workItem from="1670375063677" duration="696000" />
+      <workItem from="1670375809616" duration="651000" />
+      <workItem from="1670376484709" duration="1897000" />
+      <workItem from="1670378549685" duration="495000" />
+      <workItem from="1670384754299" duration="8731000" />
+      <workItem from="1670396578104" duration="215000" />
+      <workItem from="1670396807232" duration="3801000" />
+      <workItem from="1670430262706" duration="603000" />
+      <workItem from="1670430881639" duration="1099000" />
+      <workItem from="1670432545725" duration="2107000" />
+      <workItem from="1670435419738" duration="1327000" />
+      <workItem from="1670436788601" duration="8427000" />
+      <workItem from="1670606986540" duration="12738000" />
+      <workItem from="1670657037588" duration="5962000" />
+      <workItem from="1670688055011" duration="2113000" />
+      <workItem from="1670736800431" duration="16709000" />
+      <workItem from="1670774892370" duration="4184000" />
+      <workItem from="1670782563713" duration="1427000" />
+      <workItem from="1670789553469" duration="735000" />
+      <workItem from="1670900834454" duration="133000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
