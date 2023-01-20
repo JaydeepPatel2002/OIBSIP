@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/*
+   <!--
+
+Author:   Jaydeep Kanubhai Patel
+student id: 000481460 ( computer systems technology )
+Date:     2021-12-12
+
+-->
+*/
+html{
+   justify-items: center;
+   background-image: url("../media/finalpizza.jpg");
+   background-repeat: repeat;
+   background-size: cover;
+
+}
+body{
+   display: block;
+   position: relative;
+   width: 1050px;
+   height: 1500px;
+   border: 2px dashed #753B97;
+   margin: 0 auto;
+   box-shadow: rgb(51,51,51) 20px 0 25px,
+               rgb(51,51,51) -20px 0 25px;
+
+   background-color: rgba(255,255,255,0.8);
+}
+h1.main{
+   color: #753B97;
+   margin: 0 auto;
+   align-self: center;
+   justify-self: center;
+}
+
+
+.slide {
+   position: relative;
+   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
+   margin-top: 26px;
+}
+
+.slide-main {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+}
+
+.slide-submain:checked + .slide-item {
+   position: static;
+   opacity: 100;
+}
+
+.slide-item {
+   position: absolute;
+   opacity: 0;
+   -webkit-transition: opacity 0.6s ease-out;
+   transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+   display: block;
+   height: auto;
+   max-width: 100%;
+}
+
+
+
+.slide-control.prev {
+   left: 2%;
+}
+
+.slide-control.next {
+   right: 2%;
+}
+
+.slide-control:hover {
+   background: rgba(0, 0, 0, 0.8);
+   color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5,
+#slide-3:checked ~ .control-3 {
+   display: block;
+}
+
+.slide-indicators {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   bottom: 2%;
+   left: 0;
+   right: 0;
+   text-align: center;
+   z-index: 10;
+}
+
+.slide-control {
+   background: rgba(0, 0, 0, 0.28);
+   border-radius: 50%;
+   color: #fff;
+   display: none;
+   font-size: 40px;
+   height: 40px;
+   line-height: 35px;
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translate(0, -50%);
+   cursor: pointer;
+   -ms-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   text-align: center;
+   width: 40px;
+   z-index: 10;
+}
+
+.slide-indicators li {
+   display: inline-block;
+   margin: 0 5px;
+}
+
+.slide-bullet {
+   color: white;
+   cursor: pointer;
+   display: block;
+   font-size: 35px;
+}
+
+.slide-bullet:hover {
+   color: #aaaaaa;
+}
+
+
+
+#title {
+   width: 100%;
+   position: absolute;
+   padding: 0;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 27px;
+   color: rgba(255, 255, 255, 1);
+   font-family: 'Open Sans', sans-serif;
+   z-index: 10000;
+   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.33), -1px 0 2px rgba(255, 255, 255, 0);
+}
+/*===============================================================================================================================*/
+
+.image__img{
+
+   display: block;
+   width: 100%;
+
+}
+.image__overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.6);
+   color: white;
+   font-family: cursive,sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: 0.3s;
+}
+.image__overlay>*{
+   transform: translateY(20px);
+   transition: transform 0.3s;
+}
+
+.image__overlay:hover{
+   opacity: 1;
+}
+.image__overlay:hover>*{
+   transform: translateY(0);
+
+}
+.image__title{
+   font-size: 4em;
+   font-weight: bold;
+   color: aquamarine;
+}
+.image__details{
+   font-size: 2em;
+   margin-top: 1em;
+}
+/*=============================================================================================================*/
+li a{
+   font-size: 1.42em;
+   font-weight: bold;
+   font-family: cursive,sans-serif;
+   color: #753B97;
+   transition-duration: 0.15s;
+}
+
+nav{
+   background-color: rgba(202, 245, 4, 0.53);
+}
+footer{
+   background-image: url("../media/footerback2.jpg");
+   background-size: cover;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   padding: 10px;
+   bottom: 10px;
+
+}
+#tel, #hour{
+   width:150px;
+   height:150px;
+
+   background-color: white;
+   border-radius: 20px;
+
+}
+footer div{
+   border-radius: 20px;
+   box-shadow: rgb(51,51,51) 5px 0 10px,
+               rgb(51,51,51) -5px 0 10px;
+}
+a:hover,.mapouter:hover{
+   font-size: 1.9em;
+   color: #753B97;
+   background-color:rgb(202, 245, 4) ;
+   padding: 5px;
+   border-radius: 15px;
+   transition-duration: 0.10s;
+}
+.mapouter{position:relative;text-align:right;height:150px;width:150px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:150px;width:150px;}
+ #main{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+ section{
+    background-color: rgba(108,45,255,0.45);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 1.2em;
+    height: auto;
+    box-shadow: rgb(51,51,51) 9px 0 20px,
+    rgb(51,51,51) -10px 0 20px;
+    text-shadow: rgb(51,51,51) 9px 0 20px,
+                 rgb(51,51,51) -10px 0 20px;
+    animation-name: world;
+    animation-duration: 1.2s;
+
+
+
+ }
+ aside{
+    width: 600px;
+    background-color: rgba(36,81,255,0.45);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: rgb(51,51,51) 9px 0 20px,
+    rgb(51,51,51) -10px 0 20px;
+    text-shadow: rgb(51,51,51) 9px 0 20px,
+    rgb(51,51,51) -10px 0 20px;
+    animation-name: canada;
+    animation-duration: 1.2s;
+
+
+ }
+#menudiv{
+   display: flex;
+}
+#menudiv aside{
+   width: 500px;
+
+}
+table{
+   border: 2px double black;
+   border-radius: 20px;
+   margin-left: 25px;
+   background-color: rgba(250,244,255,0.70);
+   color: black;
+   font-size: 1.2em;
+
+}
+tr,td,th{
+   padding: 2px;
+   margin: 2px;
+   border-bottom: 5px solid greenyellow;
+
+
+}
+th{
+   border-right: 2px solid yellow;
+
+}
+
+
+
+#imp{
+   float: right;
+   margin: 15px;
+}
+footer{
+   clear: both;
+}
+#home1{
+   float: left;
+}
+#home1,#home2,#home3{
+   margin: 7px;
+   border-radius: 20px;
+   box-shadow: rgb(51,51,51) 9px 0 20px,
+   rgb(51,51,51) -10px 0 20px;
+   transform: rotate(0);
+
+   transition: .3s;
+
+
+
+}
+#fig1,#fig2,#fig3{
+   perspective: 1500px;
+}
+#home1:hover,#home2:hover,#home3:hover{
+   transform: rotateX(10deg)rotateY(-18deg)rotateZ(5deg);
+
+}
+
+@keyframes world {
+
+   0% { transform: translatex(-150px); background: lightblue;}
+   30% { transform: translatex(150px);background: skyblue ;}
+   60% { transform: translatex(-50px);background: deepskyblue ;}
+   90% { transform: rotate(0deg);background: skyblue;}
+
+}
+@keyframes canada {
+
+   0% { transform: translatex(150px); background: lightblue;}
+   30% { transform: translatex(-150px);background: skyblue ;}
+   60% { transform: translatex(50px);background: deepskyblue ;}
+   90% { transform: rotate(0deg);background: skyblue;}
+
+}
+
+@media only screen and (max-width:480px) {
+
+   body{
+      width: 100%;
+   }
+   .slide
+   {
+      display: none;
+   }
+   nav ul{
+      display: none;
+      flex-wrap: wrap;
+   }
+   a#navicon {
+      display: block;
+   }
+   a#navicon:hover+ul ,ul:hover{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   #main,#menudiv
+   {
+      flex-wrap: wrap;
+   }
+   #home2{
+      display: none;
+   }
+   section,aside{
+      width: 90%;
+   }
+   video{
+      width: 480px;
+      height: 450px;
+   }
+
+}

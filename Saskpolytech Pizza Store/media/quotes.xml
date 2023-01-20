@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="http://www.saskpolytech.ca">
+    <Quote>
+        <Name>Alex Wang</Name>
+        <Phone>(503) 555-7555</Phone>
+        <Feedback>
+            <Stars>5</Stars>
+            <Date>11/21/2021</Date>
+            <PostalCode>97403</PostalCode>
+            <Country>USA</Country>
+            <Comments>Awsome food!</Comments>
+        </Feedback>
+    </Quote>
+    <Quote>
+        <Name>Joe H.</Name>
+        <Phone>(503) 555-7555</Phone>
+        <Feedback>
+            <Stars>5</Stars>
+            <Date>11/21/2021</Date>
+            <PostalCode>97403</PostalCode>
+            <Country>USA</Country>
+            <Comments>Awsome Service!</Comments>
+        </Feedback>
+    </Quote>
+</Root>

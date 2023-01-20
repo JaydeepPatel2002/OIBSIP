@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*
+   <!--
+
+Author:   Jaydeep Kanubhai Patel
+student id: 000481460 ( computer systems technology )
+Date:     2021-12-12
+
+-->
+*/
+
+ul{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-evenly;
+   list-style-type: none;
+   text-decoration: none;
+}
+#navicon{
+   display: none;
+}
+a{
+   text-decoration: none;
+}

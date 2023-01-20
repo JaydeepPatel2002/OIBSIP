@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*
+   <!--
+
+Author:   Jaydeep Kanubhai Patel
+student id: 000481460 ( computer systems technology )
+Date:     2021-12-12
+
+-->
+*/
+
+body{
+   height: 3000px;
+}
+video,img{
+   box-shadow: rgb(51,51,51) 9px 0 20px,
+   rgb(51,51,51) -10px 0 20px;
+
+}
+
+
+video{
+   height: 620px;
+   width: 900px;
+   margin: 15px;
+   animation-name: history;
+   animation-duration: 150s;
+}
+#headingback{
+   background-image: url("../media/pisa.jpg");
+   background-repeat: repeat-x;
+}
+section{
+   background-image: url("../media/pisa.jpg");
+   background-repeat: repeat;
+   color: white;
+   font-size: large;
+   text-shadow: rgb(51,51,51) 9px 0 20px,
+   rgb(51,51,51) -10px 0 20px;
+}
+
+#printF{
+   display: none;
+}
+
+@keyframes history {
+   0%   {transform: rotate(0); background: rosybrown;}
+   5%  {transform: rotate(5.5deg); background: saddlebrown;}
+   10%  {transform: rotate(0); background: sandybrown;}
+   15%  {transform: rotate(5.5deg); background: green;}
+   20%  {transform: rotate(0); background: sandybrown;}
+   25%  {transform: rotate(-5.5deg); background: sandybrown;}
+   30%  {transform: rotate(0); background: sandybrown;}
+
+   100% { transform: rotate(0);background: red;}
+}
+@media only screen and (max-width:480px) {
+
+   body{
+      width: 100%;
+   }
+   .slide
+   {
+      display: none;
+   }
+   nav ul{
+      display: none;
+      flex-wrap: wrap;
+   }
+   a#navicon {
+      display: block;
+   }
+   a#navicon:hover+ul ,ul:hover{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   #main,#menudiv
+   {
+      flex-wrap: wrap;
+   }
+
+   #home2{
+      display: none;
+   }
+   section,aside{
+      width: 90%;
+   }
+   video{
+      width: 400px;
+      height: 380px;
+   }
+
+}
+@media only print {
+   #monitor{
+      display: none;
+   }
+   #printF{
+      display: flex;
+   }
+
+   video{
+      display: none;
+   }
+   header{
+      display: none;
+   }
+   section{
+      font-size: 1.2em;
+      text-shadow: none;
+      height: 700px;
+   }
+
+}

@@ -1,0 +1,321 @@
+<!--
+
+Author:   Jaydeep Kanubhai Patel
+student id: 000481460 ( computer systems technology )
+Date:     2021-12-12
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="css/home.css" />
+   <link rel="stylesheet" href="css/navbar.css" />
+   <link href="css/menupage.css" rel="stylesheet" />
+   <link rel="stylesheet" href="css/MenuPrint.css" media="print" />
+   <title>Menu page</title>
+</head>
+<body>
+<header>
+   <div class="slide">
+      <div class="slide-main">
+         <input class="slide-submain" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+         <div class="slide-item image">
+            <img class="image__img" src="media/menu3.jpg"   alt="image">
+            <div class="image__overlay">
+               <div class="image__title">Pizza Menu</div>
+               <p class="image__details">choose or build your own!</p>
+            </div>
+         </div>
+         <input class="slide-submain" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+         <div class="slide-item image">
+            <img class="image__img" src="media/menu1.jpg"  alt="">
+            <div class="image__overlay">
+               <div class="image__title">Traditional Pizza</div>
+               <p class="image__details">We have 36 options of pizza, which are loved by thousand's of people.</p>
+            </div>
+         </div>
+         <input class="slide-submain" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+         <div class="slide-item image">
+            <img class="image__img" src="media/menu2.jpg"  alt="">
+            <div class="image__overlay">
+               <div class="image__title">build your own!</div>
+               <p class="image__details">make your own pizza with our 18 toppings</p>
+            </div>
+         </div>
+         <input class="slide-submain" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+         <div class="slide-item image">
+            <img class="image__img" src="media/menu4.jpg"  alt="" />
+            <div class="image__overlay">
+               <div class="image__title">not only pizzas!</div>
+               <p class="image__details">with pizzas do not forget to taste nachos and sticks.<strong><em>at just 25$</em></strong></p>
+            </div>
+         </div>
+         <input class="slide-submain" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+         <div class="slide-item image">
+            <img class="image__img" src="media/menu5.jpg"  alt=""  />
+            <div class="image__overlay">
+               <div class="image__title">suggest us!</div>
+               <p class="image__details">you can suggest us that which new category we should include in menu</p>
+            </div>
+         </div>
+         <label for="slide-5" class="slide-control prev control-1">‹</label>
+         <label for="slide-4" class="slide-control prev control-5">‹</label>
+         <label for="slide-5" class="slide-control next control-4">›</label>
+         <label for="slide-4" class="slide-control next control-3">›</label>
+
+         <label for="slide-3" class="slide-control prev control-4">‹</label>
+         <label for="slide-2" class="slide-control next control-1">›</label>
+         <label for="slide-1" class="slide-control prev control-2">‹</label>
+         <label for="slide-3" class="slide-control next control-2">›</label>
+         <label for="slide-2" class="slide-control prev control-3">‹</label>
+         <label for="slide-1" class="slide-control next control-5">›</label>
+         <ol class="slide-indicators">
+            <li>
+               <label for="slide-1" class="slide-bullet">•</label>
+            </li>
+            <li>
+               <label for="slide-2" class="slide-bullet">•</label>
+            </li>
+            <li>
+               <label for="slide-3" class="slide-bullet">•</label>
+            </li>
+            <li>
+               <label for="slide-4" class="slide-bullet">•</label>
+            </li>
+            <li>
+               <label for="slide-5" class="slide-bullet">•</label>
+            </li>
+         </ol>
+      </div>
+   </div>
+   <nav>
+      <a href="#" id="navicon"><img src="media/navicon.png"  height="30"  alt="" /></a>
+      <ul>
+         <li><a href="HomePage.html">Home</a> </li>
+         <li><a href="MenuPage.html">Menu</a></li>
+         <li><a href="HistorytoPizzapage.html">History</a></li>
+         <li><a href="Customerfeedbackpage.html">Feedback</a></li>
+      </ul>
+   </nav>
+</header>
+<div id="print">
+   <h1 id="printH">Saskpolytech's Menu</h1>
+   <h3> CALL: 607-123-1234</h3>
+</div>
+<div id="menudiv">
+   <section>
+      <h1>TRADITIONAL PIZZAS</h1>
+      <h3>choose your favourite pizza from our 36 pizzas</h3>
+      <table>
+         <tr>
+            <th colspan="2" rowspan="2"></th>
+            <td>S 8"</td>
+            <td>M 10"</td>
+            <td>L 13"</td>
+            <td>XL 15"</td>
+         </tr>
+         <tr>
+            <td>6 Pcs</td>
+            <td>8 Pcs</td>
+            <td>16 Pcs</td>
+            <td>20 Pcs</td>
+         </tr>
+         <tr>
+            <th colspan="2" >1 TOPPING</th>
+            <td>10.95</td>
+            <td>15.95</td>
+            <td>24.95</td>
+            <td>33.50</td>
+         </tr>
+         <tr>
+            <th colspan="2" >2 TOPPING </th>
+            <td>12.50</td>
+            <td>17.95</td>
+            <td>27.95</td>
+            <td>36.95</td>
+         </tr>
+         <tr>
+            <th colspan="2" >3 TOPPING</th>
+            <td>13.50</td>
+            <td>19.95</td>
+            <td>30.95</td>
+            <td>38.95</td>
+         </tr>
+         <tr>
+            <th colspan="2" >LOADED</th>
+            <td>14.95</td>
+            <td>22.95</td>
+            <td>34.95</td>
+            <td>45.95</td>
+         </tr>
+      </table>
+      <ol>
+         <li> SHRIMP & MUSHROOM </li>
+         <li> PEPPERONI MUSHROOM BACON </li>
+         <li> BACON MUSHROOM SAUSAGE </li>
+         <li>  HAM MUSHROOM SAUSAGE</li>
+         <li> SALAMI MUSHROOM BACON </li>
+         <li> SAUSAGE MUSHROOM GREEN PEPPER </li>
+         <li>BACON MUSHROOM  </li>
+         <li> HAM MUSHROOM GREEN PEPPER </li>
+         <li> PEPPERONI MUSHROOM </li>
+         <li> SALAMI </li>
+         <li> BACON </li>
+         <li> PEPPERONI </li>
+         <li> HAM MUSHROOM TOMATOES </li>
+         <li> SAUSAGE </li>
+         <li> HAM </li>
+         <li> SALAMI PEPPERONI BACON </li>
+         <li> HAM MUSHROOM </li>
+         <li>  MUSHROOM GREEN PEPPER</li>
+         <li> MUSHROOM </li>
+         <li> CHEESE </li>
+         <li>ALL DRESSED <p>mushroom, salami, sausage, ham, pepperoni, onion, green pepper and pineapple</p></li>
+         <li> BEEF MUSHROOM </li>
+         <li>BEEF ONION  </li>
+         <li> HAM PINEAPPLE </li>
+         <li>VEGETARIAN <p>mushroom, onion, green pepper, tomatoes and pineapple</p></li>
+         <li> SPINACH AND FETA  </li>
+         <li> JULIANA SPECIAL
+         <p>mushroom, salami, sausage, ham, pepperoni, onion, green pepper and ground beef</p></li>
+         <li> ALL MEAT
+         <p>salami, sausage, ham, pepperoni and ground beef</p></li>
+
+      </ol>
+   </section>
+   <aside>
+      <h1>CAN'T FIND YOUR PIZZA?</h1>
+      <h3>BUILD YOUR OWN PIZZA</h3>
+      <h3>with our 18 Toppings </h3>
+      <p>Mushroom, Onions,
+         Green Peppers, Tomatoes,
+         Spinach, Pineapple, Black Olives,
+         Banana Peppers, i
+         jalapenos, Pepperoni, Ham,
+         Back Bacon, Garlic Sausage, Ground Beef, Salami,
+         Shrimp, Chicken, Feta, AND NOW PICKLES!!
+      </p>
+      <div>
+         <table>
+            <tr>
+               <th colspan="2">EXTRA CHEESE</th>
+               <td>S 2.00</td>
+               <td>M 3.00</td>
+               <td>L 4.00</td>
+               <td>XL 5.00</td>
+            </tr>
+            <tr>
+               <th colspan="2">ADD TOPPINGS</th>
+               <td>S 2.00</td>
+               <td>M 3.00</td>
+               <td>L 4.00</td>
+               <td>XL 5.00</td>
+            </tr>
+            <tr>
+               <th colspan="2">ADD CHICKEN</th>
+               <td>S 2.00</td>
+               <td>M 3.00</td>
+               <td>L 4.00</td>
+               <td>XL 5.00</td>
+            </tr>
+            <tr>
+               <th colspan="2">ADD SHRIMP</th>
+               <td>S 2.00</td>
+               <td>M 3.00</td>
+               <td>L 4.00</td>
+               <td>XL 5.00</td>
+            </tr>
+            <tr>
+               <th colspan="2">ADD FETA</th>
+               <td>S 2.00</td>
+               <td>M 3.00</td>
+               <td>L 4.00</td>
+               <td>XL 5.00</td>
+            </tr>
+            <tr>
+               <th colspan="2">SPECIALITY SAUCE</th>
+               <td>S 2.00</td>
+               <td>M 3.00</td>
+               <td>L 4.00</td>
+               <td>XL 5.00</td>
+            </tr>
+         </table>
+         <p>BBQ, Buffalo, Ranch, Teriyaki, Alfredo, Thai chilli, Tzatziki</p>
+
+      </div>
+      <div>
+         <h2 id="pageBreak">SPECIALTY PIZZAS</h2>
+         <table>
+            <tr>
+               <td>S 2.00</td>
+               <td>M 3.00</td>
+               <td>L 4.00</td>
+               <td>XL 5.00</td>
+            </tr>
+         </table>
+         <ol>
+            <li>BBQ CHICKEN
+            <p>chicken, onion, green paper, barbeque sauce</p></li>
+
+            <li>MEDITERRANEAN
+            <p>chicken, feta, black olives, green pepper, tomatoes</p></li>
+            <li>BUFFALO RANCH CHICKEN
+            <p>chicken, green pepper, onion with spicy buffalo ranch sauce</p></li>
+            <li>HAWAIIAN CHICKEN
+            <p>chicken bacon pineapple with our alfredo sauce</p></li>
+            <li>BACON CHEESEBURGER
+            <p>breakfast bacon, ground beef, pickles, onions, topped with tex mex cheese</p></li>
+            <li>FIERY CHICKEN
+            <p>chicken, banana peppers, jalapenos with our hot barbeque sauce</p></li>
+            <li>SWEET THAI CHILI CHICKEN
+            <p>chicken, green pepper, onions with chili thai sauce</p></li>
+            <li>GREEK CHICKEN
+            <p>chicken, onions, green pepper, feta, tomatoes with our tzatziki sauce</p></li>
+
+         </ol>
+      </div>
+
+
+   </aside>
+</div>
+<h1>Stay home, we deliver</h1>
+<footer id="printF">
+   <div><span>order by call :</span><a href="tel:6076054040">6076054040</a></div>
+   <div>
+      <h4>LOCATION</h4>
+      <p>Saskatchewan Polytechnic, Regina Campus</p>
+      <p>4500 Wascana Parkway
+      Regina, SK S4S 5X1</p>
+      <p>&#169 saskpolytech</p>
+   </div>
+   <div >
+      <p><strong>HOURS</strong></p>
+      <p>Mon-Sat 11 am–6 pm </p>
+      <p>Sun Closed</p>
+   </div>
+</footer>
+<footer id="monitor">
+   <div>
+      <a href="tel:6076054040"><img id="tel" src="media/telephone.png" width="150px" height="150px" alt=""></a>
+
+   </div>
+   <div class="mapouter">
+      <div class="gmap_canvas">
+         <iframe width="150px" height="150px" id="gmap_canvas" src="https://maps.google.com/maps?q=Saskatchewan%20Polytechnic,%20Regina%20Campus%204500%20Wascana%20Parkway%20Regina,%20SK%20S4S%205X1&t=&z=13&ie=UTF8&iwloc=&output=embed" >
+
+         </iframe><a href="https://123movies-org.net">123movies</a><br>
+         <a href="https://www.embedgooglemap.net">google map html</a>
+      </div>
+   </div>
+   <div id="hour" >
+      <p><strong>HOURS</strong></p>
+      <p>Mon-Sat 11 am–6 pm </p>
+      <p>Sun Closed</p>
+   </div>
+
+
+</footer>
+</body>
+</html>

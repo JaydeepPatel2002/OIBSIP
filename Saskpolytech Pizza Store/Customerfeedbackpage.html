@@ -1,0 +1,341 @@
+<!--
+
+Author:   Jaydeep Kanubhai Patel
+student id: 000481460 ( computer systems technology )
+Date:     2021-12-12
+
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="css/home.css" />
+   <link rel="stylesheet" href="css/navbar.css" />
+   <link href="css/feedback.css" rel="stylesheet" />
+   <title>Customer feedback page</title>
+   <script type="text/javascript" src="media/xmlrender.js"></script>
+</head>
+<body onload="load_quotes()">
+<header>
+   <div class="slide">
+      <div class="slide-main">
+         <input class="slide-submain" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+         <div class="slide-item image">
+            <img class="image__img" src="media/feedback4.png"   alt="image">
+            <div class="image__overlay">
+               <div class="image__title"></div>
+               <p class="image__details">get chance to win large pizza by submitting the feedback page.</p>
+            </div>
+         </div>
+         <input class="slide-submain" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+         <div class="slide-item image">
+            <img class="image__img" src="media/feedback1.jpg"  alt="">
+            <div class="image__overlay">
+               <div class="image__title"></div>
+               <p class="image__details">your feedback help us to improve our services! </p>
+            </div>
+         </div>
+         <input class="slide-submain" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+         <div class="slide-item image">
+            <img class="image__img" src="media/feedback2.png"  alt="">
+            <div class="image__overlay">
+               <div class="image__title">privacy</div>
+               <p class="image__details">we take care about your privacy and your details will not be used for any other purpose</p>
+            </div>
+         </div>
+         <input class="slide-submain" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+         <div class="slide-item image">
+            <img class="image__img" src="media/feedback3.jpg"  alt="" />
+            <div class="image__overlay">
+               <div class="image__title"> health</div>
+               <p class="image__details">we are not including any kind of artificial ingredient, which is harmful your health</p>
+            </div>
+         </div>
+         <input class="slide-submain" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+         <div class="slide-item image">
+            <img class="image__img" src="media/fourth.jpg" width="1000px" alt=""  />
+            <div class="image__overlay">
+               <div class="image__title">guaranteed small pizza</div>
+               <p class="image__details">you will get free small pizza, when you refer other to give a feedback for our pizza.</p>
+            </div>
+         </div>
+         <label for="slide-5" class="slide-control prev control-1">‹</label>
+         <label for="slide-4" class="slide-control prev control-5">‹</label>
+         <label for="slide-5" class="slide-control next control-4">›</label>
+         <label for="slide-4" class="slide-control next control-3">›</label>
+
+         <label for="slide-3" class="slide-control prev control-4">‹</label>
+         <label for="slide-2" class="slide-control next control-1">›</label>
+         <label for="slide-1" class="slide-control prev control-2">‹</label>
+         <label for="slide-3" class="slide-control next control-2">›</label>
+         <label for="slide-2" class="slide-control prev control-3">‹</label>
+         <label for="slide-1" class="slide-control next control-5">›</label>
+         <ol class="slide-indicators">
+            <li>
+               <label for="slide-1" class="slide-bullet">•</label>
+            </li>
+            <li>
+               <label for="slide-2" class="slide-bullet">•</label>
+            </li>
+            <li>
+               <label for="slide-3" class="slide-bullet">•</label>
+            </li>
+            <li>
+               <label for="slide-4" class="slide-bullet">•</label>
+            </li>
+            <li>
+               <label for="slide-5" class="slide-bullet">•</label>
+            </li>
+         </ol>
+      </div>
+   </div>
+   <nav>
+      <a href="#" id="navicon"><img src="media/navicon.png"  height="30"  alt="" /></a>
+      <ul>
+         <li><a href="HomePage.html">Home</a> </li>
+         <li><a href="MenuPage.html">Menu</a></li>
+         <li><a href="HistorytoPizzapage.html">History</a></li>
+         <li><a href="Customerfeedbackpage.html">Feedback</a></li>
+      </ul>
+   </nav>
+</header>
+<form>
+   <section id="firstdiv">
+      <fieldset id="first">
+         <legend>your experience with us</legend>
+         <div id="1st">
+            <p>which category best describes you?</p>
+            <table id="age">
+               <tr>
+                  <th></th>
+                  <td>18-24</td>
+                  <td>25-34</td>
+                  <td>35-44</td>
+                  <td>45-54</td>
+                  <td>55-64</td>
+                  <td>65+</td>
+               </tr>
+               <tr>
+                  <th>Male</th>
+                  <td><label for="gender"></label><input type="radio" name="gender" id="gender" value="male" /></td>
+                  <td><label for="gender1"></label><input type="radio" name="gender" id="gender1" value="male" /></td>
+                  <td><label for="gender2"></label><input type="radio" name="gender" id="gender2" value="male" /></td>
+                  <td><label for="gender3"></label><input type="radio" name="gender" id="gender3" value="male" /></td>
+                  <td><label for="gender4"></label><input type="radio" name="gender" id="gender4" value="male" /></td>
+                  <td><label for="gender5"></label><input type="radio" name="gender" id="gender5" value="male" /></td>
+               </tr>
+               <tr>
+                  <th>Female</th>
+                  <td><label for="gender6"></label><input type="radio" name="gender" id="gender6" value="female" /></td>
+                  <td><label for="gender7"></label><input type="radio" name="gender" id="gender7" value="female" /></td>
+                  <td><label for="gender8"></label><input type="radio" name="gender" id="gender8" value="female" /></td>
+                  <td><label for="gender9"></label><input type="radio" name="gender" id="gender9" value="female" /></td>
+                  <td><label for="gender10"></label><input type="radio" name="gender" id="gender10" value="female" /></td>
+                  <td><label for="gender11"></label><input type="radio" name="gender" id="gender11" value="female" /></td>
+               </tr>
+            </table>
+            <p>What is the most important thing for you when choosing a place to order pizza from?</p>
+            <label>
+               <input type="radio" name="place" class="place" value="price" />
+            </label>Price<br>
+            <label>
+               <input type="radio" name="place" class="place" value="Location" />
+            </label>Location<br>
+            <label>
+               <input type="radio" name="place" class="place" value="Quality of food" />
+            </label>Quality of food<br>
+            <label>
+               <input type="radio" name="place" class="place" value="Coupons or specials" />
+            </label>Coupons or specials<br>
+            <label>
+               <input type="radio" name="place" class="place" value="Other (please specify)" />
+            </label>Other(please specify)<br>
+            <label>
+               <input type="text" class="place" name="place" placeholder="enter your opinion" />
+            </label>
+         </div>
+
+         <div id="second">
+            <p>How was your recent experience with saskpolytech Pizza store?</p>
+            <table id="experience">
+               <tr>
+                  <td>Excellent</td>
+                  <td>good</td>
+                  <td>neither good nor bad</td>
+                  <td>bad</td>
+                  <td>terrible</td>
+
+
+               </tr>
+               <tr>
+                  <td><label>
+                     <input type="radio" name="experience" class="experience" value="Excellent" />
+                  </label></td>
+                  <td><label>
+                     <input type="radio" name="experience" class="experience" value="good" />
+                  </label></td>
+                  <td><label>
+                     <input type="radio" name="experience" class="experience" value="neither good nor bad" />
+                  </label></td>
+                  <td><label>
+                     <input type="radio" name="experience" class="experience" value="bad" />
+                  </label></td>
+                  <td><label>
+                     <input type="radio" name="experience" class="experience" value="terrible" />
+                  </label></td>
+
+               </tr>
+            </table>
+            <p>How many times do you order pizza from saskpolytech pizza store per month?</p>
+            <label>
+               <input type="radio" name="order" class="order" value="price" />
+            </label>0<br>
+            <label>
+               <input type="radio" name="order" class="order" value="Location" />
+            </label>1 - 2<br>
+            <label>
+               <input type="radio" name="order" class="order" value="Quality of food" />
+            </label>3 - 5<br>
+            <label>
+               <input type="radio" name="order" class="order" value="Coupons or specials" />
+            </label>6 or more<br>
+
+            <p>The quality of food at saskpolytech Pizza store?</p>
+            <table id="quality">
+               <tr>
+                  <td>Excellent</td>
+                  <td>good</td>
+                  <td>neither good nor bad</td>
+                  <td>bad</td>
+                  <td>terrible</td>
+
+
+               </tr>
+               <tr>
+                  <td><label>
+                     <input type="radio" name="quality" class="quality" value="Excellent" />
+                  </label></td>
+                  <td><label>
+                     <input type="radio" name="quality" class="quality" value="good" />
+                  </label></td>
+                  <td><label>
+                     <input type="radio" name="quality" class="quality" value="neither good nor bad" />
+                  </label></td>
+                  <td><label>
+                     <input type="radio" name="quality" class="quality" value="bad" />
+                  </label></td>
+                  <td><label>
+                     <input type="radio" name="quality" class="quality" value="terrible" />
+                  </label></td>
+
+               </tr>
+            </table>
+         </div>
+
+      </fieldset>
+   </section>
+   <aside id="feedbackAside">
+      <fieldset>
+         <legend>help us to improve</legend>
+         <p>you browse through new menu items when they are added</p>
+         <table id="newItem">
+            <tr>
+               <td>Strongly Disagree</td>
+               <td>Disagree</td>
+               <td>neither Disagree nor agree</td>
+               <td>agree</td>
+               <td>strongly agree</td>
+            </tr>
+            <tr>
+               <td><label>
+                  <input type="radio" name="newItem" class="newItem" value="Strongly Disagree" />
+               </label></td>
+               <td><label>
+                  <input type="radio" name="newItem" class="newItem" value="Disagree" />
+               </label></td>
+               <td><label>
+                  <input type="radio" name="newItem" class="newItem" value="neither Disagree nor Agree" />
+               </label></td>
+               <td><label>
+                  <input type="radio" name="newItem" class="newItem" value="Agree" />
+               </label></td>
+               <td><label>
+                  <input type="radio" name="newItem" class="newItem" value="Strongly Agree" />
+               </label></td>
+
+            </tr>
+         </table>
+            <p>Which of the following side items do you think goes Best with Pizza?</p>
+         <label>
+            <input type="radio" name="sideItem" class="sideItem" value="Wings" />
+         </label>Wings<br>
+         <label>
+            <input type="radio" name="sideItem" class="sideItem" value="Breadsticks" />
+         </label>Breadsticks<br>
+         <label>
+            <input type="radio" name="sideItem" class="sideItem" value="Dessert" />
+         </label>Dessert<br>
+         <label>
+            <input type="radio" name="sideItem" class="sideItem" value="Pasta" />
+         </label>Pasta<br>
+         <label>
+            <input type="radio" name="sideItem" class="sideItem" />
+         </label>Other(please specify)<br>
+         <label>
+            <input type="text" class="sideItem" name="sideItem" placeholder="enter your opinion" />
+         </label>
+
+         <p>Are you willing to buy pizza if discounts or coupons are offered?</p>
+         <label>
+            <input type="radio" name="discount" class="discount" value="yes" />
+         </label>Yes
+         <label>
+            <input type="radio" name="discount" class="discount" value="no"/>
+            No
+         </label>
+
+         <p>would you like to see the Saskpolytech pizza store's ambience changed? </p>
+         <label>
+            <input type="radio" name="ambience" class="ambience" value="yes" />
+         </label>Yes
+         <label>
+            <input type="radio" name="ambience" class="ambience" value="no" />
+         </label>No
+
+            <p>What would you consider a trendy place to eat? </p>
+            <label for="trendy"></label>
+            <textarea id="trendy" name="trendy" rows="4" cols="50"></textarea><br>
+
+         <input type="submit" value="Done"/>
+         <input type="reset" />
+
+      </fieldset>
+      <div id="content">
+         Test area
+      </div>
+   </aside>
+</form>
+   <footer>
+      <div>
+         <a href="tel:6076054040"><img id="tel" src="media/telephone.png" width="150px" height="150px" alt=""></a>
+
+      </div>
+      <div class="mapouter">
+         <div class="gmap_canvas">
+            <iframe width="150px" height="150px" id="gmap_canvas" src="https://maps.google.com/maps?q=Saskatchewan%20Polytechnic,%20Regina%20Campus%204500%20Wascana%20Parkway%20Regina,%20SK%20S4S%205X1&t=&z=13&ie=UTF8&iwloc=&output=embed" >
+
+            </iframe><a href="https://123movies-org.net">123movies</a><br>
+            <a href="https://www.embedgooglemap.net">google map html</a>
+         </div>
+      </div>
+      <div id="hour" >
+         <p><strong>HOURS</strong></p>
+         <p>Mon-Sat 11 am–6 pm </p>
+         <p>Sun Closed</p>
+      </div>
+
+
+   </footer>
+</body>
+</html>
